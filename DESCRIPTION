@@ -1,0 +1,11 @@
+Package: afgmedia
+Title: Afghanistan Social Media Monitoring
+Version: 0.0.0.9000
+Authors@R: 
+    person("Gianluca", "Boo", , "gianluca.boo@smallarmssurvey.org", role = "aut",
+           comment = c(ORCID = "0000-0002-4078-8221"))
+Description: Set of functions to perform social media monitoring.
+License: `use_mit_license()`
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
