@@ -1,4 +1,4 @@
-name: telegram_scraping_name
+name: telegram_scraping
 
 on:
   schedule:

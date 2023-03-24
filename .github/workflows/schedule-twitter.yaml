@@ -1,3 +1,5 @@
+name: twitter_scraping
+
 on:
   schedule:
     - cron: "0 */4 * * *"
