@@ -1,18 +1,17 @@
+name: telegram_scraping_name
+
 on:
   schedule:
     - cron: "0 */4 * * *"
 
 
 jobs: 
-  download telegram:
+  telegram_scraping_job:
     runs-on: macos-latest
 ​
     steps:
     - uses: actions/checkout@master
     - uses: r-lib/actions/setup-r@master
 ​
-    - name: Install packages
-      run: |
-        R -e 'install.packages("tidyverse")'
     - name: Telegram monitor
       run: Rscript telegram_monitor.R
