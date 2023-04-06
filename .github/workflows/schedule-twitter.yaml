@@ -1,4 +1,4 @@
-name: telegram_scraping
+name: twitter_scraping
 
 on:
   schedule:
