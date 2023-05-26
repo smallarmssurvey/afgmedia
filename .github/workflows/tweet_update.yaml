@@ -2,7 +2,7 @@ name: tweets update
 
 on:
   schedule:
-    - cron: "0 */1 * * *"
+    - cron: '59 23 * * *'
   workflow_dispatch:
 
 jobs: 
@@ -12,5 +12,5 @@ jobs:
       - name: 'update tweets'
         uses: im-open/url-status-check@v1.1.1
         with:
-          url: 'https://smallarmssurvey.shinyapps.io/afg_tweets_download/'
+          url: 'www.gazzetta.it'
           fail-on-bad-status: false
