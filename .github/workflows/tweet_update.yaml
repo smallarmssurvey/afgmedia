@@ -12,5 +12,4 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: tweets update
-      run: xdg-open 'http://www.freedesktop.org/'
-      shell: Rscript {0}
+      run: xdg-open 'https://smallarmssurvey.shinyapps.io/afg_tweets_download/'
