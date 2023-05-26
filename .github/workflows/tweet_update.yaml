@@ -9,7 +9,8 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-
-    - name: tweets update
-      run: xdg-open 'https://smallarmssurvey.shinyapps.io/afg_tweets_download/'
+      - name: 'update tweets'
+        uses: im-open/url-status-check@v1.1.1
+        with:
+          url: 'https://smallarmssurvey.shinyapps.io/afg_tweets_download/'
+          fail-on-bad-status: false
