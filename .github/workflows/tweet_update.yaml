@@ -10,7 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: update tweets
-        uses: im-open/url-status-check@v1.1.1
-        with:
-          url: "www.gazzetta.it"
-          fail-on-bad-status: false
+        xdg-open 'hwww.gazzetta.it'
