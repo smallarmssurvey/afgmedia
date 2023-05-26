@@ -2,7 +2,7 @@ name: tweets update
 
 on:
   schedule:
-    - cron: '59 23 * * *'
+    - cron: "59 23 * * *"
   workflow_dispatch:
 
 jobs: 
@@ -12,5 +12,5 @@ jobs:
       - name: 'update tweets'
         uses: im-open/url-status-check@v1.1.1
         with:
-          url: 'www.gazzetta.it'
+          url: "www.gazzetta.it"
           fail-on-bad-status: false
