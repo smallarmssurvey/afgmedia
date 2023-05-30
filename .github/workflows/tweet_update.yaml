@@ -6,12 +6,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  status-check:
-    runs-on: ubuntu-20.04
+  pinger_job:
+    name: A job to ping
+    runs-on: ubuntu-latest
+    env:
+      URL: ${{ 'http://www.gazzetta.it' }}
+      METHOD: GET
     steps:
-      - name: 'Get the status of google.com'
-        uses: im-open/url-status-check@v1.1.1
-        with:
-          url: 'https://smallarmssurvey.shinyapps.io/afg_tweets_download/'
-          fail-on-bad-status: false
-
+      - id: ping
+        uses: sisodiya2421/pinger@master
