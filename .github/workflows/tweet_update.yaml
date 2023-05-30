@@ -5,9 +5,13 @@ on:
     - cron: "59 23 * * *"
   workflow_dispatch:
 
-jobs: 
-  update:
-    runs-on: ubuntu-latest
+jobs:
+  status-check:
+    runs-on: ubuntu-20.04
     steps:
-      - name: update tweets
-        xdg-open 'hwww.gazzetta.it'
+      - name: 'Get the status of google.com'
+        uses: im-open/url-status-check@v1.1.1
+        with:
+          url: 'http://www.gazzetta.it/'
+          fail-on-bad-status: false
+
