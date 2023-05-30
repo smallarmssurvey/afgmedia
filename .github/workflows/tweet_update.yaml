@@ -14,4 +14,4 @@ jobs:
       METHOD: GET
     steps:
       - id: ping
-        uses: sisodiya2421/pinger@master
+        uses: sisodiya2421/pinger@v3
