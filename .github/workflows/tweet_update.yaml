@@ -20,6 +20,10 @@ jobs:
           browser: chrome
           version: latest
       
+      - name: Open chrome
+        run: |
+          $Env:CHROME_BIN = 'c:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe'
+
       - name: Update data
         run: |
           source("R/tweets_download.R")
