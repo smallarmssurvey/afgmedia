@@ -1,2 +1,2 @@
 #browseURL("https://smallarmssurvey.shinyapps.io/afg_tweets_download/")
-browseURL("https://smallarmssurvey.shinyapps.io/gpw_2022/", browser = "/opt/hostedtoolcache/chromium/latest/x64/chrome")
+browseURL("https://smallarmssurvey.shinyapps.io/gpw_2022/", browser = "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe")
