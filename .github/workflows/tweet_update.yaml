@@ -17,5 +17,5 @@ jobs:
         
       - name: Update data
         run: |
-          source("tweets_download.R")
+          source("R/tweets_download.R")
         shell: Rscript {0}
