@@ -33,5 +33,3 @@ jobs:
         run: |
           source("R/tweets_download_test.R")
         shell: Rscript {0}
-	env:
-          BEARER: ${{ secrets.TWITTER_BEARER }}
