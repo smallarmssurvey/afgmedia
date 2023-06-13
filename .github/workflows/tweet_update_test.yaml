@@ -1,4 +1,4 @@
-name: Update tweets
+name: Update tweets test
 
 on:
    schedule:
