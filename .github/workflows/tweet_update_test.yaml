@@ -25,7 +25,7 @@ jobs:
           $Env:CHROME_BIN = 'c:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe'
       
       - name: Load packages
-	run: |
+      	run: |
           install.packages(c("tidyverse", "tibble", "data.table", "rtweet", "tweetrmd", "webshot2", "pagedown", "chromote", "cld2", "googleLanguageR", "googledrive", "googlesheets4", "sf", "htmltools"))
         shell: Rscript {0}
 
