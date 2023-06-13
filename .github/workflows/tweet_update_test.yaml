@@ -26,7 +26,7 @@ jobs:
 
       - name: Load packages 
         run: |
-          install.packages(c("tidyverse", "tibble", "data.table", "rtweet", "tweetrmd", "webshot2", "pagedown", "chromote", "cld2", "googleLanguageR", "googledrive", "googlesheets4", "sf", "htmltools"))
+          install.packages(c("tidyverse", "tibble", "data.table", "rtweet", "webshot2", "pagedown", "chromote", "cld2", "googleLanguageR", "googledrive", "googlesheets4", "sf", "htmltools"))
         shell: Rscript {0}
 
       - name: Update data
