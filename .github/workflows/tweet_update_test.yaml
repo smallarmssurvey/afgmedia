@@ -24,8 +24,8 @@ jobs:
         with:
           use-public-rspm: true
 
-      - name: Load packages
-      	run: |
+      - name: Load packages 
+        run: |
           install.packages(c("tidyverse", "tibble", "data.table", "rtweet", "tweetrmd", "webshot2", "pagedown", "chromote", "cld2", "googleLanguageR", "googledrive", "googlesheets4", "sf", "htmltools"))
         shell: Rscript {0}
 
