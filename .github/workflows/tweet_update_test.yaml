@@ -31,7 +31,7 @@ jobs:
 
       - name: Update data
         run: |
-          source("R/tweets_download.R")
+          source("R/tweets_download_test.R")
         shell: Rscript {0}
 	env:
           BEARER: ${{ secrets.TWITTER_BEARER }}
